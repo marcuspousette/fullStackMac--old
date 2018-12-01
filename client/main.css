@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+/* img */
+.sky-img{
+  /* background: url("/img/sand-beach-pale.jpeg"); */
+  background-image: url("/img/welcome.jpeg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Background colors */
+.blue-sky{
+  background-color: #494E6B;
+}
+.dawn-sky{
+  background-color: #98848F;
+}
+.rose-sky{
+  background-color: #985E6D;
+}
+.twilight-sky{
+  background-color: #542E4A;
+}
+.deep-sky{
+  background-color: #192231;
+}
+
+/* Text color */
+.blue-sky-text{
+  color: #494E6B;
+}
+.dawn-sky-text{
+  color: #98848F;
+}
+.rose-sky-text{
+  color: #985E6D;
+}
+.twilight-sky-text{
+  color: #542E4A;
+}
+.deep-sky-text{
+  color: #192231;
+}
+
+/* gradients */
+.twilight-dawn-grad {
+  background-image: linear-gradient(to top right, #192231, #98848F);
+}
