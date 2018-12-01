@@ -1,15 +1,26 @@
 
 
-
+#welcome{
+  display: flex;
+  width: 100%;
+  height: 93.9vh;;
+  margin: auto;
+}
+.center-text-box{
+  display: flex;
+  margin: auto;
+}
+.center-text{
+  margin: auto; /* Important */
+  text-align: center;
+}
 
 
 
 
 /* img */
 .sky-img{
-  /* background: url("/img/sand-beach-pale.jpeg"); */
-  background-image: url("/img/welcome.jpeg");
-
+  background-image: url("/img/berg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -50,5 +61,5 @@
 
 /* gradients */
 .twilight-dawn-grad {
-  background-image: linear-gradient(to top right, #192231, #98848F);
+  background-image: linear-gradient(to bottom right, #192231, #98848F);
 }
