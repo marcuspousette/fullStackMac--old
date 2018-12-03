@@ -14,7 +14,10 @@ Template.method.helpers({
 
 Template.method.events({
   "click #slide": (event) => {
-    $("#slide").css('transform', 'rotateY(75deg)');
+    $("#slide").css({
+      'transform': 'scale(0.8) translate(40vw)'
+    });
+
     console.log("hi");
   },
 
