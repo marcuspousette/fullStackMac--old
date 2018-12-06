@@ -1,10 +1,12 @@
 import "./welcome.html";
 
 Template.welcome.onCreated( () => {
-
 });
 
 Template.welcome.onRendered( () => {
+  var template = Template.instance();
+  template.scrollValue = new ReactiveVar(1);
+
   if ($(window).width() >= 1000){
     setTimeout(()=>{
       $(".welcome-text").animate({opacity: 1},"slow");
@@ -13,12 +15,28 @@ Template.welcome.onRendered( () => {
     $(".welcome-text").animate({opacity: 1},1800);
   }
 
+
 });
 
 Template.welcome.helpers({
-
+  scrollValue: function(){
+    return Template.instance().scrollValue.get();
+  },
 });
 
 Template.welcome.events({
+  'mousewheel': function(event, template) {
+    var st;
+    $(window).on('scroll', ()=>{
+      st = $(window).scrollTop();
+      template.scrollValue.set(st);
+      console.log(template.scrollValue.get());
+      $("#welcome-box").css({
+        opacity: 1 - st/600,
 
+      });
+
+      $("#welcome-box").css('transform', 'scale('+ (1 - st/600) +')');
+    });
+  }
 });
