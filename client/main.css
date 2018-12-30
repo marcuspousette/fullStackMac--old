@@ -2,9 +2,6 @@
 #navbar{
   z-index: 10;
 }
-#welcome-box{
-
-}
 #welcome{
   position: fixed;
   display: flex;
@@ -36,7 +33,10 @@
     }
   }
 }
-
+.welcome-marcus-text{
+  letter-spacing: 2px;
+  font-weight: bold;
+}
 .welcome-text{
   opacity: 0;
   letter-spacing: 3px;
@@ -52,17 +52,22 @@
   text-align: center;
 }
 
-
+/* method page */
 #method{
   position: relative;
   margin-top: 100vh;
   z-index: 1;
 }
 #slide{
+  cursor: pointer;
+  height: 100vh;
   text-align: center;
   transform-origin: right;
   perspective: 700px;
   transition: all 600ms ease;
+}
+.sinkIn{
+  transform: scale(0.7) translate(60vw);
 }
 .background-img{
   position: absolute;
@@ -73,11 +78,33 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.method-box{
+  height: 100%;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.header-padding{
+  padding: 4vh 0vh;
+}
 
+/* Icons size */
+.xl-fas-icon{
+  font-size: 4em;
+}
+.l-fas-icon{
+  font-size: 3em;
+}
+.m-fas-icon{
+  font-size: 2em;
+}
+.s-fas-icon{
+  font-size: 1em;
+}
 
 /* img */
 .sky-img{
-  background-image: url("/img/berg.jpeg");
+  /* background-image: url("/img/berg.jpeg"); */
+  background-color: #181818;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,4 +150,51 @@
 }
 .blue-deep-grad {
   background-image: linear-gradient(to bottom right, #494E6B, #192231);
+}
+
+/* color scheme */
+.coal{
+  background: #181818;
+}
+.charcoal{
+  background: #222222;
+}
+.dust{
+  background: #363636;
+}
+.lightGrey{
+  background: #AAAAAA;
+}
+.my-red{
+  background: #EA4617;
+}
+.my-orange{
+  background: #F96816;
+}
+
+.text-coal{
+  color: #181818;
+}
+.text-charcoal{
+  color: #222222;
+}
+.text-dust{
+  color: #363636;
+}
+.text-lightGrey{
+  color: #AAAAAA;
+}
+.text-my-white{
+  color: #FFFFFF;
+}
+.text-my-red{
+  color: #EA4617;
+}
+.text-my-orange{
+  color: #F96816;
+}
+
+/* hover */
+.text-lightGrey:hover{
+  color: #FFFFFF;
 }

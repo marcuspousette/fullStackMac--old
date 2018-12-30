@@ -27,15 +27,12 @@ Template.welcome.helpers({
 Template.welcome.events({
   'mousewheel': function(event, template) {
     var st;
-    $(window).on('scroll', ()=>{
+    $(window).on('scroll', () => {
       st = $(window).scrollTop();
       template.scrollValue.set(st);
-      console.log(template.scrollValue.get());
       $("#welcome-box").css({
         opacity: 1 - st/600,
-
       });
-
       $("#welcome-box").css('transform', 'scale('+ (1 - st/600) +')');
     });
   }

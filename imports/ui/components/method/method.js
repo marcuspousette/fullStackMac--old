@@ -14,11 +14,8 @@ Template.method.helpers({
 
 Template.method.events({
   "click #slide": (event) => {
-    $("#slide").css({
-      'transform': 'scale(0.8) translate(40vw)'
-    });
-
-    console.log("hi");
+    let isOpen = $('#slide').hasClass('sinkIn');
+    isOpen ? $('#slide').removeClass('sinkIn') : $('#slide').addClass('sinkIn');
   },
 
 });
