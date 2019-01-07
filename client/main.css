@@ -1,6 +1,13 @@
+/* Generall */
+.padding-top-10vh {
+  padding-top: 10vh;
+}
 
 #navbar{
   z-index: 10;
+}
+.nav-text {
+  font-size: 24px!important;
 }
 #welcome{
   position: fixed;
@@ -74,7 +81,8 @@
   z-index: -1;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, #192231, #542E4A, #192231);
+  /* background-image: linear-gradient(to bottom right, #192231, #542E4A, #192231); */
+  background-image: url('/img/search.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -84,8 +92,30 @@
   font-weight: bold;
 }
 .header-padding{
-  padding: 4vh 0vh;
+  padding-top: 3vh;
 }
+.li-collection{
+  height: 20vh;
+  padding-left: 20px!important;
+  background: #222222!important;
+  border-bottom: 1px solid #181818!important;
+}
+.method-reveal-text {
+  opacity: 0;
+}
+#method-innovate{
+  transition: all 400ms ease-in-out;
+   transition-delay: 0s;
+}
+#method-elevate {
+  transition: all 400ms ease-in-out;
+   transition-delay: 0.1s;
+}
+.left-sinkin {
+  opacity: 1;
+  transform: translate(20vw);
+}
+
 
 /* Icons size */
 .xl-fas-icon{
@@ -103,7 +133,7 @@
 
 /* img */
 .sky-img{
-  /* background-image: url("/img/berg.jpeg"); */
+  /* background-image: url('/img/search.jpeg'); */
   background-color: #181818;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -154,22 +184,22 @@
 
 /* color scheme */
 .coal{
-  background: #181818;
+  background: #181818!important;
 }
 .charcoal{
-  background: #222222;
+  background: #222222!important;
 }
 .dust{
-  background: #363636;
+  background: #363636!important;
 }
 .lightGrey{
-  background: #AAAAAA;
+  background: #AAAAAA!important;
 }
 .my-red{
-  background: #EA4617;
+  background: #EA4617!important;
 }
 .my-orange{
-  background: #F96816;
+  background: #F96816!important;
 }
 
 .text-coal{
