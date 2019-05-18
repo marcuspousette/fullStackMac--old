@@ -2,12 +2,24 @@
 .padding-top-10vh {
   padding-top: 10vh;
 }
-
+.margin-top-2vh{
+  margin-top: 2vh;
+}
+.full-opacity{
+  opacity: 1;
+}
 #navbar{
   z-index: 10;
 }
 .nav-text {
   font-size: 24px!important;
+}
+#welcome-box{
+  /* background-color: black;
+  opacity: 0.4; */
+  height: 60vh;
+  width: 80vw;
+  margin: auto;
 }
 #welcome{
   position: fixed;
@@ -101,7 +113,7 @@
   border-bottom: 1px solid #181818!important;
 }
 .method-reveal-text {
-  opacity: 0;
+  line-height: normal;
 }
 #method-innovate{
   transition: all 400ms ease-in-out;
@@ -109,11 +121,19 @@
 }
 #method-elevate {
   transition: all 400ms ease-in-out;
-   transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 .left-sinkin {
-  opacity: 1;
-  transform: translate(20vw);
+  transform: translate(65vw);
+}
+.method-reveal-box {
+  padding-top: 3vh;
+  max-width: 60vw;
+  height: 45vh;
+  overflow: hide;
+}
+.method-reveal{
+  transform: translateX(-60vw);
 }
 
 
@@ -200,6 +220,9 @@
 }
 .my-orange{
   background: #F96816!important;
+}
+.red-to-orange{
+  background-image: linear-gradient(to right, #EA4617 , #F96816);
 }
 
 .text-coal{

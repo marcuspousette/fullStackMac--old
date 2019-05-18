@@ -1,4 +1,7 @@
-import "./method.html";
+import './method.html';
+import './mathod.css';
+import '/imports/ui/components/Card/Card_.js'
+import '/imports/ui/components/Banner/Banner_.js'
 
 const sinkInAnimations = isOpen => {
   if(isOpen){
@@ -20,12 +23,45 @@ Template.method.onRendered( () => {
 
 });
 
-Template.method.helpers({
+let obj1 = {
+  title: 'Title',
+  content: 'I like ballz',
+  clases: 'red',
+};
 
+let obj2 = {
+  title: 'Title',
+  content: 'I like ballz',
+  clases: 'red',
+};
+
+let obj3 = {
+  title: 'Title',
+  content: 'I like ballz',
+  clases: 'red',
+};
+
+let obj4 = {
+  title: 'Title',
+  content: 'I like ballz',
+  clases: 'red',
+};
+
+const webDevelopment = {
+  content: 'Full stack web development', 
+};
+const dataVisualization = {
+  content: 'Data driven visualizations', 
+};
+
+const cards = [obj1, obj2, obj3, obj4];
+const banners = [webDevelopment, dataVisualization];
+
+Template.method.helpers({
+  cards: () => cards,
+  banners: () => banners,
 });
 
 Template.method.events({
-  "click #slide": event => {
-    sinkInAnimations($('#slide').hasClass('sinkIn'));
-  },
+  'click .slide-action': event => { sinkInAnimations($('#slide').hasClass('sinkIn')); },
 });
