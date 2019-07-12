@@ -1,4 +1,6 @@
 import "./welcome.html";
+import "./welcome.css";
+
 
 Template.welcome.onCreated( () => {
 });

@@ -1,5 +1,5 @@
 import './home.html';
 
-import '../../components/navbar/navbar.js';
-import '../../components/welcome/welcome.js';
-import '../../components/method/method.js';
+import '/imports/ui/components/navbar/navbar.js';
+import '/imports/ui/components/home-page/welcome/welcome.js';
+import '/imports/ui/components/home-page/method/method.js';

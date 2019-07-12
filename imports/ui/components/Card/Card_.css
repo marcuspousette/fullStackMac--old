@@ -1,0 +1,14 @@
+.card-arrow {
+	width: 3vmin;
+	height: 3vmin;
+	background: transparent;
+	border-top: 1vmin solid black;
+	border-right: 1vmin solid black;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+}
+
+.card-arrow:hover {
+    border-color: orange;
+    box-shadow: 0.5vmin -0.5vmin 0 black;
+}

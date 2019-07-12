@@ -1,0 +1,49 @@
+#welcome-box{
+    /* background-color: black;
+    opacity: 0.4; */
+    height: 60vh;
+    width: 80vw;
+    margin: auto;
+  }
+  #welcome{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 110vh;;
+    margin: auto;
+    margin-top: -64px;
+  }
+  #welcome-marcus{
+    margin-bottom: 20px;
+    animation: welcome 2s 1;
+    position: relative;
+  }
+  @media only screen and (min-width: 1000px) {
+    @keyframes welcome {
+      0%{
+        transform: scale(1.3);
+        margin-bottom: -40px;
+      }
+      30%{
+        transform: scale(1.3);
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+      }
+      85%{
+        transform: scale(1.3);
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+      }
+    }
+  }
+  .welcome-marcus-text{
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  .welcome-text{
+    opacity: 0;
+    letter-spacing: 3px;
+    padding:20px;
+    font-weight: bold;
+  }
+  

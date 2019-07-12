@@ -1,7 +1,8 @@
-import './method.html';
-import './mathod.css';
+import './method.html'
+import './mathod.css'
 import '/imports/ui/components/Card/Card_.js'
 import '/imports/ui/components/Banner/Banner_.js'
+import '/imports/ui/components/Arrow/Arrow_.js'
 
 const sinkInAnimations = isOpen => {
   if(isOpen){
@@ -51,7 +52,7 @@ const webDevelopment = {
   content: 'Full stack web development', 
 };
 const dataVisualization = {
-  content: 'Data driven visualizations', 
+  content: 'Data driven designs', 
 };
 
 const cards = [obj1, obj2, obj3, obj4];
@@ -60,6 +61,7 @@ const banners = [webDevelopment, dataVisualization];
 Template.method.helpers({
   cards: () => cards,
   banners: () => banners,
+  arrow_css: () => '',
 });
 
 Template.method.events({

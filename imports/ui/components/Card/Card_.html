@@ -1,7 +1,7 @@
 <template name="Card_">
 <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
-      <div class="activator {{ clases }}" style="height: 15vh;">
+      <div class="activator {{ clases }}" style="height: 20vh;">
         
       </div>
     </div>
@@ -16,7 +16,16 @@
         {{ title }}
         <i class="material-icons right">close</i>
       </span>
-      <p>{{ content }}</p>
+      <div style="height: 12vh; padding-top: 1vh;">
+        {{ content }}
+      </div>
+      <div class="row valign-wrapper" style="height: 8vh; margin: 0px;">
+          <div class="col s6 offset-s3 arrow-container">
+            {{> Arrow_ href='#' css=arrow_css clases='card-arrow right' }}
+            <span>Showcase</span>
+            {{> Arrow_ href='#' css=arrow_css clases='card-arrow left' }}
+         </div>
+      </div>
     </div>
   </div>
 </template>

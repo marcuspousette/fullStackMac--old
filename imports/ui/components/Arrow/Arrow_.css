@@ -1,8 +1,4 @@
-.arrow-container {
-	transform: translate(-50%,-50%);
-}
-
-.arrow {
+/* .arrow {
 	width: 3vmin;
 	height: 3vmin;
 	background: transparent;
@@ -11,19 +7,19 @@
 	box-shadow: 0 0 0 lightgray;
 	transition: all 200ms ease;
 }
-.arrow.left {
-    left: 0;
-    transform: translate3d(0,-50%,0) rotate(-135deg);
-}
-
-.arrow.right {
-    right: 0;
-    transform: translate3d(0,-50%,0) rotate(45deg);
-}
 
 .arrow:hover {
     border-color: orange;
     box-shadow: 0.5vmin -0.5vmin 0 white;
+} */
+.arrow.left {
+    left: 0;
+    transform: translate3d(0,-50%,0) rotate(-135deg) translate(-70%);
+}
+
+.arrow.right {
+    right: 0;
+    transform: translate3d(0,-50%,0) rotate(45deg) translateY(70%);
 }
 
 .arrow:before { 
